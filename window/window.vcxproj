@@ -95,14 +95,14 @@
       <PrecompiledHeaderFile>
       </PrecompiledHeaderFile>
       <CompileAs>CompileAsC</CompileAs>
-      <AdditionalIncludeDirectories>C:\Users\DELL\source\repos\window\window\SDL2_ttf-2.0.15\include;C:\Users\DELL\source\repos\window\window\SDL2_image-2.0.5\include;C:\Users\DELL\source\repos\window\window\SDL2-2.0.10\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>.\SDL2_ttf-2.0.15\include;.\SDL2_image-2.0.5\include;.\SDL2-2.0.10\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
     </ClCompile>
     <Link>
       <SubSystem>Windows</SubSystem>
       <GenerateDebugInformation>true</GenerateDebugInformation>
     </Link>
     <Lib>
-      <AdditionalLibraryDirectories>C:\Users\DELL\source\repos\window\window\SDL2_ttf-2.0.15\lib\x86;C:\Users\DELL\source\repos\window\window\SDL2_image-2.0.5\lib\x86;C:\Users\DELL\source\repos\window\window\SDL2-2.0.10\lib\x86;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalLibraryDirectories>.\SDL2_ttf-2.0.15\x86_libs;.\SDL2_image-2.0.5\x86_libs;.\SDL2-2.0.10\x86_libs;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
       <AdditionalDependencies>SDL2main.lib;SDL2.lib;SDL2_image.lib;SDL2_ttf.lib;%(AdditionalDependencies)</AdditionalDependencies>
     </Lib>
     <ProjectReference />
