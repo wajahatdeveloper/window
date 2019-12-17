@@ -7,6 +7,7 @@
 #include <gl/GLU.h>
 #include <stdio.h>
 #include <string.h>
+#include "sds/sds.h"
 
 SDL_Window* gWindow;
 SDL_GLContext* gContext;
@@ -36,8 +37,10 @@ b32 window_init()
 	if (windowFullscreen) {windowFlags = windowFlags | SDL_WINDOW_FULLSCREEN;}
 	windowFlags = windowFlags | SDL_WINDOW_SHOWN;
 
+	sds sdsWindowTitle = sdsnew(windowTitle);
+
 	// Create Window
-	gWindow = SDL_CreateWindow(windowTitle, WINDOWPOS_UNDEFINED, WINDOWPOS_UNDEFINED,
+	gWindow = SDL_CreateWindow(sdsWindowTitle, WINDOWPOS_UNDEFINED, WINDOWPOS_UNDEFINED,
 		windowWidth, windowHeight, windowFlags);
 
 	if (gWindow == NULL)
@@ -83,4 +86,9 @@ void window_hanlde_events()
 			windowShouldClose = true;
 		}
 	}
+}
+
+void swapGLBuffers()
+{
+	SDL_GL_SwapWindow(gWindow);
 }

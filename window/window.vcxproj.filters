@@ -13,15 +13,27 @@
       <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
       <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
     </Filter>
+    <Filter Include="sds">
+      <UniqueIdentifier>{e5a69b76-5564-41d7-8155-d05878870c65}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="window.c">
       <Filter>Source Files</Filter>
     </ClCompile>
+    <ClCompile Include="sds\sds.c">
+      <Filter>sds</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
+    <ClInclude Include="sds\sds.h">
+      <Filter>sds</Filter>
+    </ClInclude>
+    <ClInclude Include="sds\sdsalloc.h">
+      <Filter>sds</Filter>
+    </ClInclude>
     <ClInclude Include="window.h">
-      <Filter>Header Files</Filter>
+      <Filter>sds</Filter>
     </ClInclude>
   </ItemGroup>
 </Project>
